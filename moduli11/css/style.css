@@ -1,0 +1,29 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    background: url(moduli11\background.jpg);
+}
+
+h1{
+    color: red;
+    font-size: 20px;
+}
+p{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 80px;
+}
+.box{
+    padding: 50px ;
+    border: 10px solid black;
+    margin: 20px;
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}
+.container{
+    margin: 0 auto;
+}
