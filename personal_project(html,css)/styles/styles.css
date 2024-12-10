@@ -1,95 +1,163 @@
-body{
-    margin: 0;
-    background-color: #85C1E9;
+/* Global Styling */
+body {
+  margin: 0;
+  background-color: #EEF0E5;
+  font-family: 'Arial', sans-serif;
 }
-header{
-    background-color:#1A5276;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+
+/* Header */
+header {
+  background-color: #163020;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; /* Removed the excessive padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
-header img{
-    height: 100%;
+
+header img {
+  height: 90px; 
 }
-header nav{
-    margin: auto;
+
+header nav {
+  margin: 0;
 }
-header nav ul{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style: none;
-    text-decoration: none;
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-header nav ul li a{
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    
+
+header nav ul li {
+  position: relative;
 }
-header nav ul li a:hover{
-    color: #F7DC6F;
-    transition: color 2s;
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
+
+header nav ul li a:hover {
+  color: #B6C4B6;
+  transform: scale(1.05); /* Slightly reduced scale effect */
+}
+
+/* Footer */
 footer {
-    background-color: #2C3E50; 
-    color: #ECF0F1;
-    padding: 20px 0;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
-  }
-  
-  .footer-section h3, .footer-section h4 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    color: #D4AC0D; 
-  }
-  
-  .footer-section p, .footer-section ul {
-    margin: 5px 0;
-    font-size: 14px;
-  }
-  
-  .footer-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-section ul li a {
-    text-decoration: none;
-    color: #ECF0F1;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #F7DC6F; 
-  }
-  
-  .footer-bottom {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  padding: 40px 20px;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.footer-section h3, .footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #304D30;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ECF0F1;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #B6C4B6;
+  font-weight: 500;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 12px;
+  border-top: 1px solid #34495E;
+  padding-top: 10px;
+  color: #BDC3C7;
+}
+
+.footer-bottom a {
+  color: #BDC3C7;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #B6C4B6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+header {
+    padding: 10px; /* Adjusted padding for mobile */
+    flex-direction: column;
+    height: auto;
     text-align: center;
+}
+
+header nav ul {
+    flex-direction: column;
+    margin-top: 20px; /* Space between header and nav items */
+}
+
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-section {
+    max-width: 100%;
+}
+
+.footer-bottom {
     margin-top: 20px;
-    font-size: 14px;
-    border-top: 1px solid #34495E;
-    padding-top: 10px;
-  }
-  
+}
+}
