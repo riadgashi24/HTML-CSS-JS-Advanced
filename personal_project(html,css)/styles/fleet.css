@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: #163020;
+    padding: 20px;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.fleet h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #163020;
+}
+
+.fleet .car-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.car-item {
+    background-color: #B6C4B6;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.car-item:hover {
+    transform: scale(1.05);
+}
+
+.car-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #163020;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.footer-section h3, .footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #304D30;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ECF0F1;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #B6C4B6;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    border-top: 1px solid #34495E;
+    padding-top: 10px;
+    color: #BDC3C7;
+}
+
+.footer-bottom a {
+    color: #BDC3C7;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #B6C4B6;
+}
+
+@media (max-width: 768px) {
+    .fleet {
+        padding: 20px;
+    }
+
+    .car-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .car-item {
+        width: 100%; 
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%; 
+    }
+}

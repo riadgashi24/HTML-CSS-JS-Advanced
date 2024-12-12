@@ -8,7 +8,14 @@
   background-size: cover;
   color: #163020;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  padding: 20px; 
   margin: 0;
+  width: 100%;
 }
 
 .welcome-section::before {
@@ -18,7 +25,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Dark overlay to improve text visibility */
+  background: rgba(0, 0, 0, 0.4); 
   z-index: 1;
 }
 
@@ -26,7 +33,7 @@
   font-size: 36px;
   color: white;
   margin-bottom: 20px;
-  position: relative; /* Make sure text stays above the overlay */
+  position: relative; 
   z-index: 2;
 }
 
@@ -52,12 +59,13 @@
 
 .welcome-section .btn:hover {
   background-color: #FF4500;
-  transform: scale(1.05); /* Subtle scale effect on hover */
+  transform: scale(1.05); 
 }
 
 /* Featured Cars Section */
 .featured-cars {
   background-color: #304D30;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 40px 0;
@@ -81,6 +89,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   color: #163020;
   width: 30%;
   max-width: 300px; 
@@ -116,19 +125,26 @@
   font-size: 16px;
   color: #777;
 }
-.about-us{
-  margin: 0;
-  height: 50vh;
+.about-us {
+  margin: 0 auto;
+  height: 30vh;
   background-color: #B6C4B6;
   color: #163020;
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  padding: 20px; 
 }
+
 .about-us a {
   text-decoration: none;
-  color: #B6C4B6;
+  color: #005e24;
+  margin-top: 10px; 
+}
+.about-us p{
+  margin-top: 15px;
 }
 
 @media (max-width: 768px) {

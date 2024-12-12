@@ -1,15 +1,20 @@
-/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   background-color: #EEF0E5;
   font-family: 'Arial', sans-serif;
+  overflow-y: auto;
 }
 
 /* Header */
 header {
   background-color: #163020;
   height: 100px;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   top: 0;
@@ -22,7 +27,8 @@ header {
 }
 
 header img {
-  height: 90px; 
+  height: 90px;
+  margin-left: 30px; 
 }
 
 header nav {
@@ -52,18 +58,15 @@ header nav ul li a {
 
 header nav ul li a:hover {
   color: #B6C4B6;
-  transform: scale(1.05); /* Slightly reduced scale effect */
+  transform: scale(1.05); 
 }
 
 /* Footer */
 footer {
-  background-color: #2C3E50;
-  color: #ECF0F1;
-  padding: 40px 20px;
-  font-size: 14px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  background-color: #163020;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 .footer-container {
@@ -137,7 +140,7 @@ footer {
 /* Responsive Design */
 @media (max-width: 768px) {
 header {
-    padding: 10px; /* Adjusted padding for mobile */
+    padding: 10px; 
     flex-direction: column;
     height: auto;
     text-align: center;
@@ -145,7 +148,7 @@ header {
 
 header nav ul {
     flex-direction: column;
-    margin-top: 20px; /* Space between header and nav items */
+    margin-top: 20px;
 }
 
 .footer-container {

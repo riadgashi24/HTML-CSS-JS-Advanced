@@ -3,47 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="styles/foto/favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>EXPRESS-CAR RENTAL</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <title>Kontakte - EXPRESS-CAR RENTAL</title>
 </head>
 <body>
     <header>
         <a href="index.html"><img src="styles/foto/logo.png" alt="our logo"></a>
         <nav>
             <ul>
-              <li><a href="index.html">Ballina</a></li>
-              <li><a href="fleet.html">Makinat tona</a></li>
-              <li><a href="contact.html">Kontakte</a></li>
-              <li><a href="about.html">Rreth nesh</a></li>
+                <li><a href="index.html">Ballina</a></li>
+                <li><a href="fleet.html">Makinat tona</a></li>
+                <li><a href="contact.html">Kontakte</a></li>
+                <li><a href="about.html">Rreth nesh</a></li>
             </ul>
-          </nav>          
+        </nav>          
     </header>
+
+    <main class="contact">
+        <h1>Na Kontaktoni</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Emri:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesazhi:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Dërgo</button>
+        </form>
+    </main>
+
     <footer>
-      <div class="footer-container">
-        <div class="footer-section">
-          <h3>Express Car Rental</h3>
-          <p>Qira makinash të shpejtë dhe të besueshëm për çdo udhëtim.</p>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Express Car Rental</h3>
+                <p>Qira makinash të shpejtë dhe të besueshëm për çdo udhëtim.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Menu</h4>
+                <ul>
+                    <li><a href="index.html">Ballina</a></li>
+                    <li><a href="fleet.html">Makinat tona</a></li>
+                    <li><a href="contact.html">Kontakte</a></li>
+                    <li><a href="about.html">Rreth nesh</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="contact">
+                <h4>Kontakte</h4>
+                <p>Email: info@expresscarrental.com</p>
+                <p>Tel: +383 44 123 456</p>
+                <p>Adresa: Prishtinë, Kosovë</p>
+            </div>
         </div>
-        <div class="footer-section">
-          <h4>Menu</h4>
-          <ul>
-            <li><a href="index.html">Ballina</a></li>
-            <li><a href="fleet.html">Makinat tona</a></li>
-            <li><a href="contact.html">Kontakte</a></li>
-            <li><a href="about.html">Rreth nesh</a></li>
-          </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Express Car Rental. Të gjitha të drejtat e rezervuara.</p>
         </div>
-        <div class="footer-section" id="contact">
-          <h4>Kontakte</h4>
-          <p>Email: info@expresscarrental.com</p>
-          <p>Tel: +383 44 123 456</p>
-          <p>Adresa: Prishtinë, Kosovë</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Express Car Rental. Të gjitha të drejtat e rezervuara.</p>
-      </div>
     </footer>
-    
 </body>
 </html>
