@@ -3,17 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
     <title>Lesson 30</title>
 </head>
 <body>
     <!-- <input type="text" id="text-input">
     <button id="button">Show</button>
-    <h1 id="text"></h1> -->
-
+    <h1 id="text"></h1>
     <input type="number" id="input">
     <button id="button">Click</button>
-    <h1 id="h1"></h1>
+    <h1 id="h1"></h1> -->
 
+    <h1>Digital School clock</h1>
+    <h2>Clock goes here</h2>
+    <picture>
+        <img src="ds_clock.png" alt="clock" id="clock">
+    </picture>
+
+    <h4>Set wake up time</h4>
+    <select id="wakeUpTimeSelector">
+        <option value="1">1 AM - 2 AM</option>
+        <option value="2">2 AM - 3 AM</option>
+        <option value="3">3 AM - 4 AM</option>
+        <option value="4">4 AM - 5 AM</option>
+        <option value="5">5 AM - 6 AM</option>
+        <option value="6">6 AM - 7 AM</option>
+        <option value="7" selected>7 AM - 8 AM</option>
+        <option value="8">8 AM - 9 AM</option>
+        <option value="9">9 AM - 10 AM</option>
+        <option value="10">10 AM - 11 AM</option>
+    </select>
+
+    <h4>Set Digital School class time</h4>
+    <select id="dsTimeSelector">
+        <option value="1">1 PM - 2 PM</option>
+        <option value="2">2 PM - 3 PM</option>
+        <option value="3">3 PM - 4 PM</option>
+        <option value="4">4 PM - 5 PM</option>
+        <option value="5" selected>5 PM - 6 PM</option>
+        <option value="6">6 PM - 7 PM</option>
+    </select>
+    
+    <h4>Set sleep time</h4>
+    <select id="sleepTimeSelector">
+        <option value="1">8 PM - 9 PM</option>
+        <option value="2">9 PM - 10 PM</option>
+        <option value="3">10 PM - 11 PM</option>
+        <option value="4">11 PM - 12 PM</option>
+        <option value="5">1 AM - 2 AM</option>
+        <option value="6">2 AM - 3 AM</option>
+        <option value="7">3 AM - 4 AM</option>
+    </select>
+
+    <br><br>
+
+    <button id="saveButton" >Save</button>
     <script src="main.js"></script>
 </body>
 </html>
