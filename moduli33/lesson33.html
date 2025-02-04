@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Validation with regex</title>
+</head>
+<body>
+    <form method="POST" onsubmit="return validation()">
+        <div class="name-container">
+            <label for="name" id="name_label">Name: </label>
+            <input type="text" name="name" id="name">
+            <span id="name_error">Please enter a valid name! </span>
+        </div>
+        <br>
+        <div class="age-container">
+            <label for="age" id="age_label">Age: </label>
+            <input type="text" name="age" id="age">
+            <span id="age_error">Please enter a valid age! </span>
+        </div>
+        <br>
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
